@@ -1,0 +1,102 @@
+.boxx {
+    width: 900 px;
+    float: right;
+  }
+  
+  .boxx ul li {
+    width: 100px;
+    float: left;
+    margin: 2px auto;
+    text-align: center;
+  }
+  
+  .boxx ul li a {
+    text-decoration: none;
+    color:white;
+  }
+  
+  .boxx ul li:hover {
+    background-color: green;
+  }
+  .boxx ul li a:hover {
+    color: white;
+  }
+
+  /*for Phablets*/
+@media (min-width: 400px) {
+    .content .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /*for Tablets*/
+  @media (min-width: 550px) {
+    .content .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /*for Desktop*/
+  @media (min-width: 750px) {
+    .content .grid {
+      grid-column-gap: var(--space-big);
+    }
+  }
+  /* tablets*/
+@media (min-width: 750px) {
+    .introduction.biography {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+    footer {
+        color: white;
+      }
+      
+      footer .contact-links{
+        padding-left: 0;
+        padding: 4px;
+        background-color:var(--color-blue) ;
+        color: white;
+      }
+      
+      footer .contact-links li {
+        list-style: none;
+        margin-bottom: var(--space-small);
+        background-color:var(--color-blue);
+        color:white;
+      }
+      
+      footer .contact-links a {
+        padding: 4px;
+        background-color:var(--color-blue);
+        color: black;
+      }
+      
+      body {
+        font-family: Lucida Sans;
+        color:white;
+        background-color:var(--color-slateGray);
+        background-size: cover;
+      }
+
+      a:link {
+        color: red;
+      }
+
+      a:visited {
+        color:white;
+      }
+      
+      a:hover {
+        color:black;
+      }
+     
+     
+
+
+      
+    

@@ -1,0 +1,106 @@
+.boxx {
+  width: 900 px;
+  float: right;
+}
+
+.boxx ul li {
+  width: 100px;
+  float: left;
+  margin: 2px auto;
+  text-align: center;
+}
+
+.boxx ul li a {
+  text-decoration: none;
+  color:white;
+}
+
+.boxx ul li:hover {
+  background-color: green;
+}
+.boxx ul li a:hover {
+  color: white;
+}
+
+/*for Phablets*/
+@media (min-width: 400px) {
+  .content .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*for Tablets*/
+@media (min-width: 550px) {
+  .content .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*for Desktop*/
+@media (min-width: 750px) {
+  .content .grid {
+    grid-column-gap: var(--space-big);
+  }
+}
+
+.introduction.biography {
+  text-align: center;
+}
+
+img {
+  border-radius: 500px;
+  border: black;
+  width: 150px;
+  height: auto;
+  margin-bottom: var(--space-medium);
+}
+
+/* tablets*/
+@media (min-width: 750px) {
+  .introduction.biography {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .introduction.column-left {
+    margin-right: var(--space-medium);
+  }
+  .introduction.logo {
+    margin-bottom: 0;
+  }
+  p {
+    max-width: 600px;
+  }
+}
+
+footer {
+  color: white;
+}
+
+footer .contact-links{
+  padding-left: 0;
+  padding: 4px;
+  background-color:var(--color-blue) ;
+  color: white;
+}
+
+footer .contact-links li {
+  list-style: none;
+  margin-bottom: var(--space-small);
+  background-color:var(--color-blue);
+  color:white;
+}
+
+footer .contact-links a {
+  padding: 4px;
+  background-color:var(--color-blue);
+  color: black;
+}
+
+body {
+  font-family: Lucida Sans;
+  color:white;
+  background-color:var(--color-slateGray);
+  background-size: cover;
+}
